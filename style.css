@@ -25,11 +25,13 @@ body {
   button {
   border-radius: 8px;
   border: none;
-  background-color: #10687e65;
+  background-color: #20bf55;
+  background-image: linear-gradient(315deg, #20bf55 0%, #01baef 74%);
   color: white;
   font-size: 18px;
   padding: 16px 24px;
   text-align: center;
+  width: 100%;
   }
   h1 { 
     font-size: 75px;
