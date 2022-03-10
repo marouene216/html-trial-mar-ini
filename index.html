@@ -4,9 +4,159 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Survey-Form</title>
 </head>
 <body>
-   <h1>Hello World, we are software developers!</h1> 
+    <main>
+        <div class="container">
+            <div class="title">
+                <h1 id="title">
+                    Survey on Working with VScode
+                </h1>
+                <p id="description">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero nostrum eligendi cum expedita, nihil labore.
+                </p>
+            </div>
+
+        </div>
+
+        <form id="survey-form">
+            <label for="name" id="name">Name</label>
+            <input type="text" name="name" id="name" placeholder="name">
+            
+            <br>
+
+            <label for="email" id="email">email</label>
+            <input type="email" name="email" id="email" placeholder="email">
+
+            <br>
+
+            <label for="age" id="age">age</label>
+            <input type="number" name="age" id="number" placeholder="age" min="10" max="100">
+
+            <p>What tech field are you?</p>
+            <select name="dropdown" id="dropdown" required>
+                <option disabled selected value>Select an Option</option>
+                <option value="Data-Scientist">Data Scientist</option>
+                <option value="Software-Developer">Software Developer</option>
+                <option value="Information-Security-Analyst">Information Security Analyst</option>
+                <option value="Computer-Systems-Analyst">Computer Systems Analyst</option>
+                <option value="Web-Developer">Web Developer</option>
+                <option value="Sales-Engineer">Sales Engineer</option>
+                <option value="Information-Technology-Manager">Information Technology Manager</option>
+                <option value="Computer-Research-Scientist">Computer Research Scientist</option>
+                <option value="others">others</option>
+            </select>
+
+            <p>if others, kindly mention below</p>
+            <label for="others" id="others">others</label>
+            <input type="text" name="others" id="others" placeholder="write here">
+
+            <p>What is your skill level with VScode</p>
+            <select name="skill" name="skill" id="skill" required>
+                <option value="Beginner">Beginner</option>
+                <option value="intermediate">intermediate</option>
+                <option value="advance">Advance</option>
+            </select>
+
+            <!-- radio buttons  -->
+            <p>Would your recommend VScode to a friend?</p>
+            <label>
+                <input type="radio" name="recommend" id="definately" value="Definately">
+                Definately
+            </label>
+            <br>
+            <label>
+                <input type="radio" name="recommend" id="maybe" value="MayBe">
+                MayBe
+            </label>
+            <br>
+            <label>
+                <input type="radio" name="recommend" id="not-sure" value="Not Sure">
+                Not Sure
+            </label>
+
+            <!-- dropdown -->
+            <p>What is your favourite feature of VScode</p>
+            <select name="fav-feature" id="fav-feature" required>
+                <option disabled selected value>Select an Option</option>
+                <option value="Emmet">Emmet Abbreviations</option>
+                <option value="CLI">The Integrated CLI (Command Line Interface)</option>
+                <option value="ESLint">ESLint</option>
+                <option value="Computer-Systems-Analyst">Computer Systems Analyst</option>
+                <option value="Prettier">Prettier</option>
+                <option value="Multi-Cursor">Multi-Cursor Shortcuts</option>
+                <option value="Text-Wrap">Text Wrap</option>
+                <option value="EnD">Execute and Debug</option>
+                <option value="others">others</option>
+            </select>
+
+            <!-- checkbox -->
+            <p>Which of these extension(s) do you like best <span class="small-txt">select all that meets your view</span></p>
+
+            <!-- Front-end Projects
+            Back-end Projects
+            Data Visualization
+            Challenges
+            Open Source Community
+            Gitter help rooms
+            Videos
+            City Meetups
+            Wiki
+            Forum
+            Additional Courses -->
+
+            <label>
+                <input type="checkbox" value="Live-Server" name="prefer" class="checkbox">
+                Live Server
+            </label>
+            <br>
+            <label>
+                <input type="checkbox" value="Remote-SSH" name="prefer" class="checkbox">
+                Remote - SSH
+            </label><br>
+            <label>
+                <input type="checkbox" value="Stepsize" name="prefer" class="checkbox">
+                Stepsize
+            </label><br>
+            <label>
+                <input type="checkbox" value="Prettier" name="prefer" class="checkbox">
+                Prettier
+            </label><br>
+            <label>
+                <input type="checkbox" value="WakaTime" name="prefer" class="checkbox">
+                WakaTime
+            </label><br>
+            <label>
+                <input type="checkbox" value="Code-Spell-Checker" name="prefer" class="checkbox">
+                Code Spell Checker
+            </label><br>
+            <label>
+                <input type="checkbox" value="Compareit" name="prefer" class="checkbox">
+                Compareit
+            </label><br>
+            <label>
+                <input type="checkbox" value="GitLens" name="prefer" class="checkbox">
+                GitLens
+            </label><br>
+            <label>
+                <input type="checkbox" value="Remote-Containers" name="prefer" class="checkbox">
+                Remote - Containers
+            </label><br>
+            <label>
+                <input type="checkbox" value="Quokka.js" name="prefer" class="checkbox">
+                Quokka.js
+            </label><br>
+
+            <p>Additional comments or suggestions on area of improvement</p>
+            <textarea name="comments" id="comments" cols="50" rows="10"></textarea><br>
+
+            <button type="submit" id="sumbit">
+                submit
+            </button>
+            
+        </form>
+
+    </main>
 </body>
 </html>
